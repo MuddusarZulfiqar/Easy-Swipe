@@ -1,0 +1,203 @@
+﻿
+/*
+Item Name: jQuery Carousel Evolution
+Author: Mapalla
+Author URI: http://codecanyon.net/user/Mapalla
+Version: 1.0
+*/
+
+/* _______________________________________________ */
+
+/* CONTAINER */
+/* _______________________________________________ */
+
+
+.carousel {
+  position : relative;
+  margin : 0 auto;
+  width : 100%;
+  height : auto;
+  border : none;
+  overflow : visible;
+}
+
+/* _______________________________________________ */
+
+/* SLIDES */
+/* _______________________________________________ */
+
+/* slide container */
+
+.carousel .slides {
+  margin : 0;
+  padding : 0;
+  border : none;
+  list-style : none;
+  position : relative;
+  overflow : visible;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* slide item */
+
+.carousel .slides .slideItem {
+  position : absolute;
+  cursor : pointer;
+  overflow : hidden;
+  padding : 0;
+  margin : 0;
+  border : none;
+}
+
+.carousel .slides .slideItem a {
+  display: block;
+  text-decoration : none;
+  margin : 0;
+  padding : 0;
+  border : none;
+  outline : none;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carousel .slides .slideItem img {
+  margin : 0;
+  padding : 0;
+  border : none;
+  width : 100%;
+  height : 100%;
+  border-radius: 20px;
+}
+
+/* _______________________________________________ */
+
+/* DIRECTION BUTTON */
+/* _______________________________________________ */
+
+
+.carousel .nextButton,.slick-next {
+  position : absolute;
+  right : 10px;
+  top : 133px;
+  width : 50px;
+  height : 50px;
+  background: url("data:image/svg+xml,%0A%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 276.52 512'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%230082ff;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M137.61,512a19.84,19.84,0,0,1-14-33.89L346.32,256,123.59,33.91a19.85,19.85,0,0,1,28-28.11L388.44,242a19.84,19.84,0,0,1,0,28.1L151.62,506.22A19.78,19.78,0,0,1,137.61,512Z' transform='translate(-117.76 -0.01)'/%3E%3C/svg%3E") no-repeat center;
+  cursor : pointer;
+  z-index : 9999;
+  background-color: #fff;
+  border-radius: 50%;
+  background-size: 30px 30px;
+  outline: none;
+  border: none;
+}
+
+.carousel .prevButton,.slick-prev {
+  position : absolute;
+  left : 10px;
+  top : 133px;
+  width : 50px;
+  height: 50px;
+  background: url("data:image/svg+xml,%0A%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 277.99 511.99'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%230082ff;%7D%3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M376,.74a19.84,19.84,0,0,1,13.8,34L165.7,255.43,387,478.93a19.85,19.85,0,0,1-28.2,27.93L123.49,269.22a19.85,19.85,0,0,1,.18-28.1L362,6.45A19.8,19.8,0,0,1,376,.74Z' transform='translate(-117.74 -0.74)'/%3E%3C/svg%3E") no-repeat center;
+  cursor : pointer;
+  z-index : 9999;
+  background-color: #fff;
+  border-radius: 50%;
+  background-size: 30px 30px;outline: none;
+  border: none;
+}
+
+/* _______________________________________________ */
+
+/* NAVIGATION BUTTON */
+/* _______________________________________________ */
+
+/* buttons container */
+
+.carousel .buttonNav {
+  position : relative;
+  margin : 0 auto;
+  z-index : 999;
+}
+
+/* numbers */
+
+.carousel .buttonNav .numbers {
+  position : relative;
+  float : left;
+  margin : 5px;
+  color : #828282;
+  cursor : pointer;
+  font-weight : bold;
+  text-decoration : none;
+  font-size : 1em;
+  font-family : Arial, Verdana;
+}
+
+.carousel .buttonNav .numbers:hover {
+  color: #000;
+  text-decoration : underline;
+}
+
+.carousel .buttonNav .numberActive {
+  background : none;
+  color : #000;
+  cursor : default;
+}
+
+/* bullets */
+
+.carousel .buttonNav .bullet {
+  position : relative;
+  float : left;
+  width : 16px;
+  height : 16px;
+  background : url(../images/Bullet-White.png) no-repeat center;
+  margin : 5px;
+  float : left;
+  cursor : pointer;
+  display: none !important;
+}
+
+.carousel .buttonNav .bullet:hover { background : url(../images/Bullet-Black.png) no-repeat center; }
+
+.carousel .buttonNav .bulletActive {
+  background : url(../images/Bullet-Black.png) no-repeat center;
+  cursor : default;
+}
+
+/* ____________________________________________________________ */
+
+/* VIDEO */
+/* ____________________________________________________________ */
+
+
+.carousel .slides .videoOverlay { background : url("../images/video.png") no-repeat center; /* play button */ }
+
+.carousel .slides .spinner { background : #000 url("../images/loading.gif") no-repeat center; /* video preloader */ }
+
+/* _____________________________ *
+
+/* SHADOW */
+/* _____________________________ */
+
+
+.carousel .shadow {
+  width : 100%;
+  height : 82px;
+}
+
+
+/* ____________________________________________________________ */
+
+/* REFLECTION GRADIENT */
+/* ____________________________________________________________ */
+
+/* gradient color for Opera */
+
+.carousel .gradient { background-image : url(../scripts/gradient.svg); }
+
+/* Navigation Counter  */
+
